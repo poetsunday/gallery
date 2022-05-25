@@ -20,25 +20,55 @@
             <H5>This is my first attempt at creating a Photo gallery with bootstrap.</H5>
         </figure>
     </header>
+<section class="gallery min-vh-100">
+    <div class="container-lg">
+        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="col">
+                <img src="img/img001.JPG" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+                <img src="img/img002.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+                <img src="img/img003.JPG" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+                <img src="img/img004.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+                <img src="img/img005.jpg" class="gallery-item" alt="gallery">
+            </div>
+            <div class="col">
+                <img src="img/img006.jpg" class="gallery-item" alt="gallery">
+            </div>
+        </div>
+    </div>
+</section>
 
-
-
-
-
-
+   
     
-    
-    
-    
-    
-    
+<!-- Modal -->
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/img001.JPG" class="modal-img" alt="modal img">
+            </div>
+        </div>
+    </div>
+</div>
     <!-- Optional JavaScript; choose one of the two! -->
     
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    
     <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="js/gallery.js"></script>
+
     <footer>
         <figure class="text-center">&copy; 2022<br />
         <a href="#">Terms of Service</a>
